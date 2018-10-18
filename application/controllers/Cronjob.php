@@ -13,7 +13,7 @@ class Cron extends MY_Controller
 
  public function run()
      {
-        $this->load->library('core/CronRunner');
+        $this->load->library('CronRunner');
         $cron = new CronRunner();
         $cron->run();
      }
